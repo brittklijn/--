@@ -1,0 +1,226 @@
+/* hulp gehad van Danny de Vries */
+
+/* CSS Reset */
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+/* Eigen CSS */
+
+body {
+    background-color: #FAF3EE;
+}
+
+header {
+    background-color: #fff;
+}
+
+nav {
+}
+nav ul {
+    display: flex;
+    align-items:center
+    
+}
+
+nav ul li:last-child {
+    margin-left:auto;
+    
+}
+nav a {
+    text-decoration: none;
+    color: #21D370;
+    transition: color 300ms;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    display: inline-block;
+    color: #29129D;
+    font-size: 3.7rem;
+    margin: 0.2em;
+    text-align: right;
+    font-family: "Nexa Bold";
+}
+
+.subtitle {
+    font-size: 2rem;
+}
+
+header .avatar {
+    margin-left: auto;
+}
+
+.nav-container {
+    display: flex;
+}
+
+li {
+    display: inline-block;
+    font-family: "Nexa light";
+    margin: 1.2em;
+    font-size: 0.8em;
+}
+
+button {
+    background-color: #29129D;
+    color: #fff;
+    border-radius: 0.8em;
+    width: 6em;
+    height: 5em;
+    border: none;
+    position: absolute;
+    top: 1em;
+    font-family: "Nexa light";
+    font-size: 0.7em;
+    transition: background-color 300ms ease, transform 300ms;
+}
+
+button:hover{
+    background-color: #FC376A;
+    transform: scale(1.1);
+}
+
+.button-download {
+    right: 2em;
+}
+
+.button-add {
+    left: 2em;
+}
+
+button img.plus {
+    display: block;
+    margin: 0.5em auto;
+    width: 2em;
+}
+
+button img.check {
+    display: none;
+    margin: 0.5em auto;
+    width: 2em;
+}
+
+/* Only show when class of 'show' from JavaScript */
+
+.show img.add {
+    display: none;
+}
+
+.show img.check {
+    display: block;
+}
+
+article {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 3em;
+    margin-right: 1em;
+    margin-left: 1em;
+    border-color: #21D370;
+    border-radius: 0.8em;
+    background-color: #21D370;
+    color: #fff;
+    flex-grow: 1;
+    flex-basis: 25%;
+    min-width: 17em;
+}
+
+footer img {
+    width: 2em;
+    white-space: 1em;
+    margin-right: 0.5em;
+    margin-left: 1em;
+}
+
+footer {
+    width: 100%;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    margin: -1em;
+    padding-right: 1em;
+}
+
+h2 {
+    font-family: "Nexa bold";
+    font-size: 2em;
+    margin: 0.6em;
+}
+
+fieldset {
+    font-family: 'Nexa light';
+    border: none;
+}
+
+.search {
+    border: none;
+    color: white;
+    background-color: #FC376A;
+    border-radius: 0.8em;
+    height: 2em;
+    position: inherit;
+    width: 33.3%;
+    font-family: 'Nexa light';
+    font-size: 0.8em;
+    /* Longhand */
+    transition-property: background-color;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    /*Shorthand */
+    transition: background-color 300ms ease;
+}
+
+.search:hover {
+    background-color: #A51F41;
+    transform: scale(1.2);
+}
+
+.placeholder{
+    height: 2em;
+    margin-top: 1em;
+    font-family: 'Nexa light';
+    width: 65.3%;
+    position: inherit;
+    font-size: 0.8em;
+    padding: 0.6em;
+    border: 0.1em solid #4D4E4C;
+    border-radius: 0.8em;    
+}
+
+.foto{
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    width: 100%;
+    height: 9em;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media all and (min-width: 800px){
+    fieldset{
+        width: 50%;
+    }
+}
