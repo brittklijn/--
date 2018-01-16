@@ -1,8 +1,23 @@
-var button = document.querySelector('button');
+var buttonArticle = document.querySelector('article button');
+var buttonFilter = document.querySelector('form button');
+var fieldset = document.querySelector('fieldset');
 
-button.addEventListener('click', checkmark);
+
+function filter() {
+    fieldset.classList.toggle('show');
+}
 
 function checkmark() {
-    button.classList.toggle('show');
+    buttonArticle.classList.toggle('show');
 }
+
+buttonArticle.addEventListener('click', checkmark);
+buttonFilter.addEventListener('click', filter);
+
+
+
+
+
+
+
 
